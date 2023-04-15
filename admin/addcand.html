@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_a.css">
 </head>
 <body>
+    <div id="menu">
+        <a href="addcand.html">Dodaj Kandydata</a>
+        <a href="results.html">Wyniki</a>
+        <a href="">Wykresy</a>
+        <p onclick="logout()">Wyloguj się</p>
+    </div>
     <div id="form">
-        <p>Imię:</p>
-        <input id="name" type="text">
-        <p>Nazwisko:</p>
-        <input id="surname" type="text">
-        <button onclick="add_cand()">Dodaj kandydata</button>
+        <div id="div_form">
+            <h2>DODAJ KANDYDATA</h2>
+            <div>
+                <p>Imię:</p>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <p>Nazwisko:</p>
+                <input id="surname" type="text">
+            </div>
+            <button onclick="add_cand()">Dodaj kandydata</button>
+        </div>
     </div>
     <script src="config.js"></script>
     <script src="app.js"></script>

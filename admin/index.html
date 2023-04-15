@@ -7,8 +7,18 @@
     <title>Admin</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body onload="onload_login()">
+    <div id="login">
+        <div>
+            <h3>użytkownik:</h3>
+            <input id="user" type="text">
+        </div>
+        <div>
+            <h3>hasło:</h3>
+            <input id="pass" type="password">
+        </div>
+        <button onclick="login()">Zaloguj się</button>
+    </div>
     <script src="config.js"></script>
     <script src="app.js"></script>
 </body>

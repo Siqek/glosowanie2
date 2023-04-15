@@ -1,10 +1,13 @@
 body {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20vh 80vh;
-    grid-template-areas: 
-    "menu"
-    "login";
-
     margin: 0px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    height: 100vh;
 }

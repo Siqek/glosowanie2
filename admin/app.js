@@ -48,3 +48,22 @@ async function add_cand(){
         alert("dodano kandydata")
     }
 }
+
+function login(){
+    const user = document.getElementById("user").value
+    const pass = document.getElementById("pass").value
+
+    if (user == "admin" && pass == "admin"){
+        localStorage.setItem("login", "true")
+        window.location.href = "results.html"
+    }
+}
+
+function onload_login(){
+    if (localStorage.getItem("login") === "true") window.location.href = "results.html"
+}
+
+function logout(){
+    localStorage.setItem("login", "false")
+    window.location.href = "index.html"
+}

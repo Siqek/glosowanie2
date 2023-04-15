@@ -4,36 +4,33 @@ body {
     grid-template-rows: 20vh 80vh;
     grid-template-areas: 
     "menu"
-    "results";
+    "form";
 
     margin: 0px;
 }
 
-#results {
-    grid-area: results;
-    padding-top: 20px;
+#form {
+    grid-area: form;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12px;
 
-    flex-wrap: wrap;
-
-    overflow: auto;
     border-top: black solid 2px;
 }
 
-.cands {
-    height: 500px;
-    width: 250px;
+#div_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
+    padding: 25px;
+    padding-bottom: 45px;
     border: black solid 2px;
-}
 
-h2 {
-    text-align: center;
+    transform: scale(1.15);
 }
 
 #menu {
