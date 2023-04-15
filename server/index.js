@@ -23,17 +23,9 @@ app.get(`/`, (req, res) => {
     res.send("ok /")
 })
 
-app.get(`/select/cand`, (req, res) => {
-    const sql = "SELECT * FROM `Candidates`"
-
-    con.query(sql, (err, result, fields) => {
-        if (err) console.log(err)
-        else res.send(result)
-    })
-})
-
-app.get(`/select/voters`, (req, res) => {
-    const sql = "SELECT * FROM `Voters`"
+app.get(`/select/:table`, (req, res) => {
+    const table = req.params.table
+    const sql = `SELECT * FROM ${table}`
 
     con.query(sql, (err, result, fields) => {
         if (err) console.log(err)
@@ -45,5 +37,22 @@ app.get(`/select/voters`, (req, res) => {
 //    
 //})
 
+app.get(`/insert/voter/:pesel/:cand`, (req, res) => {
+    const sql = `INSERT INTO voters VALUES (null, '${req.params.pesel}', '${req.params.cand}')`
+
+    con.query(sql, (err, result, fields) => {
+        if (err) console.log(err)
+        else res.send(result)
+    })
+})
+
+app.get(`/insert/cand/:name/:surname`, (req, res) => {
+    const sql = `INSERT INTO candidates VALUES (null, '${req.params.name}', '${req.params.surname}')`
+
+    con.query(sql, (err, result, fields) => {
+        if (err) console.log(err)
+        else res.send(result)
+    })
+})
 
 app.listen(port)
