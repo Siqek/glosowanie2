@@ -33,15 +33,15 @@ app.get(`/select/:table`, (req, res) => {
     })
 })
 
-app.get(`/select/count/:table`, (req, res) => {
-    const table = req.params.table
-    const sql = `SELECT COUNT(*) FROM ${table}`
-
-    con.query(sql, (err, result, fields) => {
-        if (err) console.log(err)
-        else res.send(result)
-    })
-})
+//app.get(`/select/count/:table`, (req, res) => {
+//    const table = req.params.table
+//    const sql = `SELECT COUNT(*) as len FROM ${table}`
+//
+//    con.query(sql, (err, result, fields) => {
+//        if (err) console.log(err)
+//        else res.send(result)
+//    })
+//})
 
 app.get(`/insert/voter/:pesel/:cand`, (req, res) => {
     const sql = `INSERT INTO voters VALUES (null, '${req.params.pesel}', '${req.params.cand}')`

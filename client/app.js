@@ -8,7 +8,7 @@ async function getData(){
     console.log(json.length)
 
     const div = document.getElementById("div_candidates")
-    for (var i=0; i<=json.length; i++){
+    for (var i=0; i<=json.length - 1; i++){
         const cand = document.createElement("div")
         cand.classList.add("candidates")
 

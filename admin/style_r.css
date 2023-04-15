@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 80vh;
+    grid-template-areas: 
+    "menu"
+    "results";
+
+    margin: 0px;
+}
+
+#results {
+    grid-area: results;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+    border-top: black solid 2px;
+}
+
+.cands {
+    height: 500px;
+    width: 250px;
+
+    border: black solid 2px;
+}
+
+h2 {
+    text-align: center;
+}

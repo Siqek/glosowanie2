@@ -5,4 +5,6 @@ body {
     grid-template-areas: 
     "menu"
     "login";
+
+    margin: 0px;
 }
