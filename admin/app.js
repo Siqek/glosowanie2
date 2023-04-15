@@ -36,5 +36,15 @@ async function getData(){
 }
 
 async function add_cand(){
-    
+    const name = document.getElementById("name").value
+    const surname = document.getElementById("surname").value
+
+    const url = `${baseurl}/insert/cand/${name}/${surname}`
+
+    if (name == "" || surname == ""){
+        alert("wprowadź dane")
+    } else {
+        await fetch(url)
+        alert("dodano kandydata")
+    }
 }
