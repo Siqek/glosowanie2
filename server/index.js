@@ -42,7 +42,7 @@ app.get(`/insert/voter/:pesel/:cand`, (req, res) => {
 
     con.query(sql, (err, result, fields) => {
         if (err) console.log(err)
-        else res.send(result)
+        else res.send("added")
     })
 })
 
