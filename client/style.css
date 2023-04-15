@@ -5,12 +5,42 @@ body {
     grid-template-areas: 
     "interface"
     "candidates";
+
+    margin: 0px;
 }
 
 #interface {
     grid-area: interface;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    border-bottom: black solid 2px;
 }
 
 #div_candidates {
     grid-area: candidates;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+.candidates {
+    height: 200px;
+    width: 270px;
+    border: black solid 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 30px;
 }
