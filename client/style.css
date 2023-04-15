@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 70vh;
+    grid-template-areas: 
+    "interface"
+    "candidates";
+}
+
+#interface {
+    grid-area: interface;
+}
+
+#div_candidates {
+    grid-area: candidates;
+}
