@@ -26,7 +26,7 @@ app.get(`/`, (req, res) => {
 app.get(`/select/cand`, (req, res) => {
     const sql = "SELECT * FROM `Candidates`"
 
-    con.query(sql, (err, result, fileds) => {
+    con.query(sql, (err, result, fields) => {
         if (err) console.log(err)
         else res.send(result)
     })
@@ -35,7 +35,7 @@ app.get(`/select/cand`, (req, res) => {
 app.get(`/select/voters`, (req, res) => {
     const sql = "SELECT * FROM `Voters`"
 
-    con.query(sql, (err, result, fileds) => {
+    con.query(sql, (err, result, fields) => {
         if (err) console.log(err)
         else res.send(result)
     })
