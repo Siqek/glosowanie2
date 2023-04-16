@@ -61,6 +61,11 @@ function login(){
 
 function onload_login(){
     if (localStorage.getItem("login") === "true") window.location.href = "results.html"
+    else window.location.href = "index.html"
+}
+
+function onload_login_l(){
+    if (localStorage.getItem("login") === "true") window.location.href = "results.html"
 }
 
 function logout(){
