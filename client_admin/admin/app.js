@@ -33,6 +33,7 @@ async function getData(){
         cand_div.appendChild(cand_ol)
         document.getElementById("results").appendChild(cand_div)
     }
+    lider()
 }
 
 async function add_cand(){
@@ -72,4 +73,23 @@ function onload_login(){
 function logout(){
     localStorage.setItem("login", "false")
     window.location.href = "index.html"
+}
+
+function lider(){
+    var lider = ''
+    var max = 0
+    var n = 0
+    for (var i=0; i<=json2.length - 1; i++){
+        n = 0
+        for (var j=0; j<=json.length - 1; j++){
+            if (i+1 === json[j].Candidate) n++
+        }
+        if (n == max && n != 0) lider = `${lider} i ${json2[i].Name} ${json2[i].Surname}`
+        if (n > max) {
+        max = n
+        lider = `${json2[i].Name} ${json2[i].Surname}`
+        }
+    }   
+
+    document.getElementById("lider").innerHTML = "Aktualny lider: " + lider
 }

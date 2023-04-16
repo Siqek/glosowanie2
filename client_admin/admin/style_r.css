@@ -1,9 +1,10 @@
 body {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 20vh 10vh 70vh;
     grid-template-areas: 
     "menu"
+    "lider"
     "results";
 
     margin: 0px;
@@ -27,7 +28,7 @@ body {
 }
 
 .cands {
-    height: 500px;
+    height: 400px;
     width: 250px;
 
     border: olive solid 2px;
@@ -56,4 +57,9 @@ h2 {
 
 * {
     color: olive;
+}
+
+#div_lider {
+    grid-area: lider;
+    border-top: solid olive 2px;
 }

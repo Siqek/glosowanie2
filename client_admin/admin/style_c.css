@@ -23,6 +23,10 @@ body {
 
 #chart {
     grid-area: chart;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #back {
@@ -33,4 +37,9 @@ body {
 
 * {
     color: olive;
+}
+
+#myChart {
+    max-width: 1000px;
+    max-height: 1000px;
 }

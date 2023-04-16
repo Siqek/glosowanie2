@@ -6,7 +6,7 @@ var n = 0
 
 function chart_n(){
     new Chart("myChart", {
-        type: "bar",
+        type: "doughnut",
         data: {
           labels: xValues,
           datasets: [{
@@ -17,7 +17,7 @@ function chart_n(){
         options: {
           title: {
             display: true,
-            text: "World Wide Wine Production"
+            text: "Głosy na kandydatów"
           }
         }
       });
