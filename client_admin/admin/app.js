@@ -56,16 +56,17 @@ function login(){
     if (user == "admin" && pass == "admin"){
         localStorage.setItem("login", "true")
         window.location.href = "results.html"
+    } else {
+        alert("złe dane")
     }
-}
-
-function onload_login(){
-    if (localStorage.getItem("login") === "true") window.location.href = "results.html"
-    else window.location.href = "index.html"
 }
 
 function onload_login_l(){
     if (localStorage.getItem("login") === "true") window.location.href = "results.html"
+}
+
+function onload_login(){
+    if (localStorage.getItem("login") != "true") window.location.href = "index.html"
 }
 
 function logout(){

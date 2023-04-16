@@ -7,6 +7,7 @@ body {
     "candidates";
 
     margin: 0px;
+    background-color: rgb(39, 39, 39);
 }
 
 #interface {
@@ -16,7 +17,7 @@ body {
     place-items: center;
     text-align: center;
 
-    border-bottom: black solid 2px;
+    border-bottom: olive solid 2px;
 }
 
 #div_candidates {
@@ -35,7 +36,7 @@ body {
 .candidates {
     height: 200px;
     width: 270px;
-    border: black solid 1px;
+    border: olive solid 1px;
 
     display: flex;
     justify-content: center;
@@ -43,4 +44,28 @@ body {
     flex-direction: column;
 
     padding-bottom: 30px;
+}
+
+#back {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+}
+
+button {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
+}
+
+input {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
+}
+
+* {
+    color: olive;
+}
+
+.p {
+    font-size: 150%;
 }

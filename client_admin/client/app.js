@@ -14,6 +14,7 @@ async function getData(){
 
         const name_p = document.createElement("p")
         name_p.innerHTML = `${json[i].Name} ${json[i].Surname}`
+        name_p.classList.add("p")
 
         const button = document.createElement("button")
         button.innerHTML = "Zagłosuj"

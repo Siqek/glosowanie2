@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-color: rgb(39, 39, 39);
 }
 
 #login {
@@ -10,4 +11,24 @@ body {
     gap: 15px;
 
     height: 100vh;
+}
+
+#back {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+}
+
+button {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
+}
+
+input {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
+}
+
+* {
+    color: olive;
 }

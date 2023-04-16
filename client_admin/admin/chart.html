@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style_c.css">
 </head>
-<body>
-    
+<body onload="onload_login()">
+    <div id="menu">
+        <a href="addcand.html">Dodaj Kandydata</a>
+        <a href="results.html">Wyniki</a>
+        <a href="chart.html">Wykresy</a>
+        <p onclick="logout()">Wyloguj się</p>
+    </div>
+    <div id="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div>
+        <a href="../index.html" id="back">Wróć</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>

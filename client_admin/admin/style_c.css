@@ -4,39 +4,10 @@ body {
     grid-template-rows: 20vh 80vh;
     grid-template-areas: 
     "menu"
-    "results";
+    "chart";
 
     margin: 0px;
     background-color: rgb(39, 39, 39);
-}
-
-#results {
-    grid-area: results;
-    padding-top: 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-
-    flex-wrap: wrap;
-
-    overflow: auto;
-    border-top: olive solid 2px;
-}
-
-.cands {
-    height: 500px;
-    width: 250px;
-
-    border: olive solid 2px;
-    border-radius: 20px;
-    overflow: auto;
-}
-
-h2 {
-    text-align: center;
 }
 
 #menu {
@@ -46,6 +17,12 @@ h2 {
     align-items: center;
     flex-direction: row;
     gap: 30px;
+
+    border-bottom: olive  solid 2px;
+}
+
+#chart {
+    grid-area: chart;
 }
 
 #back {

@@ -7,6 +7,7 @@ body {
     "form";
 
     margin: 0px;
+    background-color: rgb(39, 39, 39);
 }
 
 #form {
@@ -16,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    border-top: black solid 2px;
+    border-top: olive solid 2px;
 }
 
 #div_form {
@@ -28,7 +29,8 @@ body {
 
     padding: 25px;
     padding-bottom: 45px;
-    border: black solid 2px;
+    border: olive solid 2px;
+    border-radius: 20px;
 
     transform: scale(1.15);
 }
@@ -40,4 +42,24 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 30px;
+}
+
+#back {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+}
+
+* {
+    color: olive;
+}
+
+button {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
+}
+
+input {
+    background-color: rgb(39, 39, 39);
+    border: olive solid 2px;
 }
