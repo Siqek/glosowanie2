@@ -53,7 +53,20 @@ function chart_n(){
             xValues = `${xValues}]`
             yValues = `${yValues}]`
         }
-    }
+    }//push
+    //obiekt
+    // ^
+    //string
+    //
+    ///
+    ///
+    ////
+    ///
+    ///
+    //
+    //
+    //
+    //
     chart_n()
     console.log(yValues)
     console.log(xValues)
